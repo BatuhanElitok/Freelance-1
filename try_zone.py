@@ -23,7 +23,7 @@ def parse_lotr_script(script_file):
     dialog_data = []
     
     # Sahne yönergeleri - bunları filtreleyin
-    scene_directions = ["DAY", "NIGHT", "MORNING", "EVENING", "DUSK", "DAWN", "AFTERNOON", "LATER", "CONTINUOUS"]
+    scene_directions = ["DAY", "NIGHT", "MORNING", "EVENING", "DUSK", "DAWN", "AFTERNOON", "LATER", "CONTINUOUS",'BLACK SCREEN']
     
     # Normal konuşmaları işle
     for match in re.finditer(dialog_pattern, script_text):
