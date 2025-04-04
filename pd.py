@@ -4,16 +4,16 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.colors import LinearSegmentedColormap
 
-# Theme data
+# Tema verileri
 theme_data = {
-    'Theme': ['Power', 'Evil', 'Friendship', 'Journey', 'Hope'],
-    'Minutes': [81, 43, 24, 15, 15],
-    'Percentage': [45.6, 24.1, 13.7, 8.2, 8.4]
+    'Tema': ['Güç', 'Kötülük', 'Dostluk', 'Yolculuk', 'Umut'],
+    'Dakika': [81, 43, 24, 15, 15],
+    'Yüzde': [45.6, 24.1, 13.7, 8.2, 8.4]
 }
 
 theme_df = pd.DataFrame(theme_data)
 
-# Theme distributions of main characters
+# Ana karakterlerin tema dağılımları
 character_themes = [
     ["GANDALF", 56, 8, 22, 30, 5],
     ["FRODO", 20, 4, 1, 6, 2],
@@ -29,108 +29,108 @@ character_themes = [
 ]
 
 char_df = pd.DataFrame(character_themes, 
-                       columns=['Character', 'Power', 'Journey', 'Friendship', 'Evil', 'Hope'])
+                       columns=['Karakter', 'Güç', 'Yolculuk', 'Dostluk', 'Kötülük', 'Umut'])
 
-# Calculate total theme references for each character
-char_df['Total'] = char_df.iloc[:, 1:].sum(axis=1)
+# Her karakterin toplam tema referanslarını hesapla
+char_df['Toplam'] = char_df.iloc[:, 1:].sum(axis=1)
 
-# Calculate percentages for each theme
-for theme in ['Power', 'Journey', 'Friendship', 'Evil', 'Hope']:
-    char_df[f'{theme}_Percent'] = (char_df[theme] / char_df['Total'] * 100).round(1)
+# Her tema için yüzde hesapla
+for theme in ['Güç', 'Yolculuk', 'Dostluk', 'Kötülük', 'Umut']:
+    char_df[f'{theme}_Yüzde'] = (char_df[theme] / char_df['Toplam'] * 100).round(1)
 
-# Subtheme distribution
+# Alt tema dağılımı
 subtheme_data = [
-    # Power subthemes
-    {'Main Theme': 'Power', 'Subtheme': "The Power and Influence of the Ring", 'Minutes': 36},
-    {'Main Theme': 'Power', 'Subtheme': "Struggle for Power and Authority", 'Minutes': 24},
-    {'Main Theme': 'Power', 'Subtheme': "Resistance Against Power", 'Minutes': 21},
+    # Güç alt temaları
+    {'Ana Tema': 'Güç', 'Alt Tema': "Yüzük'ün Gücü ve Etkisi", 'Dakika': 36},
+    {'Ana Tema': 'Güç', 'Alt Tema': "İktidar ve Otorite Mücadelesi", 'Dakika': 24},
+    {'Ana Tema': 'Güç', 'Alt Tema': "Güç Karşısında Direnç", 'Dakika': 21},
     
-    # Evil subthemes
-    {'Main Theme': 'Evil', 'Subtheme': "Threat of Sauron", 'Minutes': 17},
-    {'Main Theme': 'Evil', 'Subtheme': "Betrayal (Saruman)", 'Minutes': 13},
-    {'Main Theme': 'Evil', 'Subtheme': "Inner Darkness and Temptation", 'Minutes': 13},
+    # Kötülük alt temaları
+    {'Ana Tema': 'Kötülük', 'Alt Tema': "Sauron'un Tehdidi", 'Dakika': 17},
+    {'Ana Tema': 'Kötülük', 'Alt Tema': "İhanet (Saruman)", 'Dakika': 13},
+    {'Ana Tema': 'Kötülük', 'Alt Tema': "İçsel Karanlık ve Ayartılma", 'Dakika': 13},
     
-    # Friendship subthemes
-    {'Main Theme': 'Friendship', 'Subtheme': "Bonds of Fellowship", 'Minutes': 10},
-    {'Main Theme': 'Friendship', 'Subtheme': "Sacrifice", 'Minutes': 8},
-    {'Main Theme': 'Friendship', 'Subtheme': "Overcoming Racial/Species Differences", 'Minutes': 6},
+    # Dostluk alt temaları
+    {'Ana Tema': 'Dostluk', 'Alt Tema': "Kardeşlik Bağları", 'Dakika': 10},
+    {'Ana Tema': 'Dostluk', 'Alt Tema': "Fedakarlık", 'Dakika': 8},
+    {'Ana Tema': 'Dostluk', 'Alt Tema': "Irk/Tür Ayrımlarını Aşma", 'Dakika': 6},
     
-    # Journey subthemes
-    {'Main Theme': 'Journey', 'Subtheme': "Journey into the Unknown", 'Minutes': 6},
-    {'Main Theme': 'Journey', 'Subtheme': "Change and Growth", 'Minutes': 5},
-    {'Main Theme': 'Journey', 'Subtheme': "Leaving Home", 'Minutes': 4},
+    # Yolculuk alt temaları
+    {'Ana Tema': 'Yolculuk', 'Alt Tema': "Bilinmeyene Yolculuk", 'Dakika': 6},
+    {'Ana Tema': 'Yolculuk', 'Alt Tema': "Değişim ve Büyüme", 'Dakika': 5},
+    {'Ana Tema': 'Yolculuk', 'Alt Tema': "Evi Terk Etme", 'Dakika': 4},
     
-    # Hope subthemes
-    {'Main Theme': 'Hope', 'Subtheme': "Standing Against Darkness", 'Minutes': 8},
-    {'Main Theme': 'Hope', 'Subtheme': "Power of Small Things", 'Minutes': 4},
-    {'Main Theme': 'Hope', 'Subtheme': "Ultimate Victory of Good", 'Minutes': 3}
+    # Umut alt temaları
+    {'Ana Tema': 'Umut', 'Alt Tema': "Karanlığa Karşı Dayanma", 'Dakika': 8},
+    {'Ana Tema': 'Umut', 'Alt Tema': "Küçük Şeylerin Gücü", 'Dakika': 4},
+    {'Ana Tema': 'Umut', 'Alt Tema': "İyiliğin Nihai Zaferi", 'Dakika': 3}
 ]
 
 subtheme_df = pd.DataFrame(subtheme_data)
 
-# Film sections by theme
+# Film bölümlerine göre temalar
 section_data = [
-    {'Section': 'Introduction and Shire', 'Minutes': 35, 'Dominant Themes': 'Power (Ring history), Journey (beginning)'},
-    {'Section': "Discovery of the Ring", 'Minutes': 15, 'Dominant Themes': "Power (Ring's effects), Evil (Sauron's threat)"},
-    {'Section': "Escape from the Shire", 'Minutes': 20, 'Dominant Themes': "Journey, Friendship, Evil (Nazgûl pursuit)"},
-    {'Section': 'Bree and Aragorn', 'Minutes': 15, 'Dominant Themes': "Friendship, Power (Ring's influence)"},
-    {'Section': 'Weathertop', 'Minutes': 12, 'Dominant Themes': "Evil, Journey"},
-    {'Section': 'Rivendell', 'Minutes': 25, 'Dominant Themes': "Friendship (Formation of Fellowship), Power (Decisions about the Ring)"},
-    {'Section': 'Moria', 'Minutes': 30, 'Dominant Themes': "Friendship, Evil, Journey"},
-    {'Section': 'Lothlórien', 'Minutes': 16, 'Dominant Themes': "Power, Hope"},
-    {'Section': 'River Journey', 'Minutes': 10, 'Dominant Themes': "Journey, Friendship"}
+    {'Bölüm': 'Giriş ve Shire', 'Dakika': 35, 'Baskın Temalar': 'Güç (Yüzük tarihi), Yolculuk (başlangıcı)'},
+    {'Bölüm': "Yüzük'ün Keşfi", 'Dakika': 15, 'Baskın Temalar': "Güç (Yüzük'ün etkileri), Kötülük (Sauron'un tehdidi)"},
+    {'Bölüm': "Shire'dan Kaçış", 'Dakika': 20, 'Baskın Temalar': "Yolculuk, Dostluk, Kötülük (Nazgûl takibi)"},
+    {'Bölüm': 'Bree ve Aragorn', 'Dakika': 15, 'Baskın Temalar': "Dostluk, Güç (Yüzük'ün etkisi)"},
+    {'Bölüm': 'Weathertop', 'Dakika': 12, 'Baskın Temalar': "Kötülük, Yolculuk"},
+    {'Bölüm': 'Rivendell', 'Dakika': 25, 'Baskın Temalar': "Dostluk (Kardeşliğin kurulması), Güç (Yüzük hakkında kararlar)"},
+    {'Bölüm': 'Moria', 'Dakika': 30, 'Baskın Temalar': "Dostluk, Kötülük, Yolculuk"},
+    {'Bölüm': 'Lothlórien', 'Dakika': 16, 'Baskın Temalar': "Güç, Umut"},
+    {'Bölüm': 'Nehir Yolculuğu', 'Dakika': 10, 'Baskın Temalar': "Yolculuk, Dostluk"}
 ]
 
 section_df = pd.DataFrame(section_data)
 
-# Theme development throughout the film
+# Temaların film boyunca gelişimi
 progression_data = [
-    {'Film Section': 'Beginning of Film (0-35 min)', 'Power': 'High', 'Journey': 'Medium', 'Friendship': 'Low', 'Evil': 'Medium', 'Hope': 'Low'},
-    {'Film Section': 'First Quarter (35-70 min)', 'Power': 'Medium', 'Journey': 'High', 'Friendship': 'Medium', 'Evil': 'Medium', 'Hope': 'Low'},
-    {'Film Section': 'Middle of Film (70-105 min)', 'Power': 'Medium', 'Journey': 'Medium', 'Friendship': 'High', 'Evil': 'Medium', 'Hope': 'Medium'},
-    {'Film Section': 'Third Quarter (105-140 min)', 'Power': 'Medium', 'Journey': 'Low', 'Friendship': 'Medium', 'Evil': 'High', 'Hope': 'Low'},
-    {'Film Section': 'End of Film (140-178 min)', 'Power': 'High', 'Journey': 'Medium', 'Friendship': 'High', 'Evil': 'Low', 'Hope': 'High'}
+    {'Filmin Bölümü': 'Filmin Başı (0-35 dk)', 'Güç': 'Yüksek', 'Yolculuk': 'Orta', 'Dostluk': 'Düşük', 'Kötülük': 'Orta', 'Umut': 'Düşük'},
+    {'Filmin Bölümü': 'Filmin İlk Çeyreği (35-70 dk)', 'Güç': 'Orta', 'Yolculuk': 'Yüksek', 'Dostluk': 'Orta', 'Kötülük': 'Orta', 'Umut': 'Düşük'},
+    {'Filmin Bölümü': 'Filmin Ortası (70-105 dk)', 'Güç': 'Orta', 'Yolculuk': 'Orta', 'Dostluk': 'Yüksek', 'Kötülük': 'Orta', 'Umut': 'Orta'},
+    {'Filmin Bölümü': 'Filmin Üçüncü Çeyreği (105-140 dk)', 'Güç': 'Orta', 'Yolculuk': 'Düşük', 'Dostluk': 'Orta', 'Kötülük': 'Yüksek', 'Umut': 'Düşük'},
+    {'Filmin Bölümü': 'Filmin Sonu (140-178 dk)', 'Güç': 'Yüksek', 'Yolculuk': 'Orta', 'Dostluk': 'Yüksek', 'Kötülük': 'Düşük', 'Umut': 'Yüksek'}
 ]
 
 progression_df = pd.DataFrame(progression_data)
 
-# Convert theme intensity to numerical values
-intensity_map = {'High': 3, 'Medium': 2, 'Low': 1}
+# Tema yoğunluğunu sayısal değerlere dönüştür
+intensity_map = {'Yüksek': 3, 'Orta': 2, 'Düşük': 1}
 
-for col in ['Power', 'Journey', 'Friendship', 'Evil', 'Hope']:
-    progression_df[f'{col}_Value'] = progression_df[col].map(intensity_map)
+for col in ['Güç', 'Yolculuk', 'Dostluk', 'Kötülük', 'Umut']:
+    progression_df[f'{col}_Değer'] = progression_df[col].map(intensity_map)
 
-# Save the data analysis to an Excel file
-with pd.ExcelWriter('LOTR_Theme_Analysis.xlsx') as writer:
-    theme_df.to_excel(writer, sheet_name='Main Themes', index=False)
-    char_df.to_excel(writer, sheet_name='Character Themes', index=False)
-    subtheme_df.to_excel(writer, sheet_name='Subthemes', index=False)
-    section_df.to_excel(writer, sheet_name='Film Sections', index=False)
-    progression_df.to_excel(writer, sheet_name='Theme Progression', index=False)
+# Veri analizini bir Excel dosyasına kaydedelim
+with pd.ExcelWriter('LOTR_Tema_Analizi.xlsx') as writer:
+    theme_df.to_excel(writer, sheet_name='Ana Temalar', index=False)
+    char_df.to_excel(writer, sheet_name='Karakter Temaları', index=False)
+    subtheme_df.to_excel(writer, sheet_name='Alt Temalar', index=False)
+    section_df.to_excel(writer, sheet_name='Film Bölümleri', index=False)
+    progression_df.to_excel(writer, sheet_name='Temaların Gelişimi', index=False)
 
-print("Theme analysis Excel file created: LOTR_Theme_Analysis.xlsx")
+print("Tema analizi Excel dosyası oluşturuldu: LOTR_Tema_Analizi.xlsx")
 
-# Examples for visualizations
+# Görselleştirmeler için bazı örnekler
 
-# 1. Pie Chart of Main Themes
+# 1. Ana Temaların Pasta Grafiği
 plt.figure(figsize=(10, 7))
-plt.pie(theme_df['Minutes'], labels=theme_df['Theme'], autopct='%1.1f%%', startangle=140, 
+plt.pie(theme_df['Dakika'], labels=theme_df['Tema'], autopct='%1.1f%%', startangle=140, 
         colors=['#4C72B0', '#DD8452', '#55A868', '#C44E52', '#8172B3'])
-plt.title('The Lord of the Rings: The Fellowship of the Ring\nTheme Distribution (Minutes)')
-plt.savefig('theme_distribution_pie.png', dpi=300, bbox_inches='tight')
+plt.title('Yüzüklerin Efendisi: Yüzük Kardeşliği\nTema Dağılımı (Yüzdelik)')
+plt.savefig('tema_dagilimi_pasta.png', dpi=300, bbox_inches='tight')
 
-# 2. Character Theme Focus (First 7 characters)
+# 2. Karakterlerin Tema Odakları (İlk 7 karakter)
 plt.figure(figsize=(14, 8))
 top_chars = char_df.iloc[:7].copy()
-themes = ['Power_Percent', 'Evil_Percent', 'Friendship_Percent', 'Journey_Percent', 'Hope_Percent']
-theme_labels = ['Power', 'Evil', 'Friendship', 'Journey', 'Hope']
+themes = ['Güç_Yüzde', 'Kötülük_Yüzde', 'Dostluk_Yüzde', 'Yolculuk_Yüzde', 'Umut_Yüzde']
+theme_labels = ['Güç', 'Kötülük', 'Dostluk', 'Yolculuk', 'Umut']
 
-# Prepare data
+# Verileri hazırla
 data = []
 for theme, label in zip(themes, theme_labels):
     data.append(top_chars[theme].values)
 
-# Create bar chart
+# Çubuk grafiği oluştur
 x = np.arange(len(top_chars))
 width = 0.15
 multiplier = 0
@@ -143,24 +143,24 @@ for attribute, measurement in zip(theme_labels, data):
     multiplier += 1
 
 ax.set_xticks(x + width * 2)
-ax.set_xticklabels(top_chars['Character'])
-ax.set_ylabel('Theme Percentage (%)')
-ax.set_title('Theme Focus of Main Characters')
+ax.set_xticklabels(top_chars['Karakter'])
+ax.set_ylabel('Tema Yüzdesi (%)')
+ax.set_title('Ana Karakterlerin Tema Odakları')
 ax.legend(loc='upper right')
-plt.savefig('character_theme_focus.png', dpi=300, bbox_inches='tight')
+plt.savefig('karakter_tema_odaklari.png', dpi=300, bbox_inches='tight')
 
-# 3. Further Improved Subtheme Tree Map with Better Spacing
+# 3. Alt Temaların Ağaç Haritası
 plt.figure(figsize=(16, 18))  # Even more increased height for better readability
-colors = {'Power': '#4C72B0', 'Evil': '#DD8452', 'Friendship': '#55A868', 
-          'Journey': '#C44E52', 'Hope': '#8172B3'}
+colors = {'Güç': '#4C72B0', 'Kötülük': '#DD8452', 'Dostluk': '#55A868', 
+          'Yolculuk': '#C44E52', 'Umut': '#8172B3'}
 
-# Assign color for each main theme
+# Assign color for each Ana Tema
 cmap = {}
-for theme in subtheme_df['Main Theme'].unique():
+for theme in subtheme_df['Ana Tema'].unique():
     cmap[theme] = colors.get(theme, '#333333')
 
-# Assign main theme's color to each subtheme
-subtheme_df['Color'] = subtheme_df['Main Theme'].map(cmap)
+# Assign Ana Tema's color to each subtheme
+subtheme_df['Color'] = subtheme_df['Ana Tema'].map(cmap)
 
 # Create tree map
 from matplotlib.patches import Rectangle
@@ -178,17 +178,17 @@ colors = []
 theme_spacing = 15  # Increased spacing between themes
 min_rect_height = 15  # Minimum rectangle height for better text display
 
-for theme in subtheme_df['Main Theme'].unique():
-    subset = subtheme_df[subtheme_df['Main Theme'] == theme]
+for theme in subtheme_df['Ana Tema'].unique():
+    subset = subtheme_df[subtheme_df['Ana Tema'] == theme]
     
     theme_start_y = y_pos  # Remember where this theme starts
     
     # Rectangles for subthemes with minimum height
     for _, row in subset.iterrows():
         # Ensure minimum rectangle height
-        rect_height = max(row['Minutes'] * 1.5, min_rect_height)  # Scale minutes by 1.5 and ensure minimum height
+        rect_height = max(row['Dakika'] * 1.5, min_rect_height)  # Scale Dakika by 1.5 and ensure minimum height
         rect = Rectangle((0, y_pos), 1, rect_height, facecolor=cmap[theme], alpha=0.8, edgecolor='white')
-        rects.append((rect, row['Subtheme'], row['Minutes']))
+        rects.append((rect, row['Alt Tema'], row['Dakika']))
         y_pos += rect_height + 5  # Add 5 units spacing between subthemes
     
     # Calculate theme height and y position for label
@@ -224,7 +224,7 @@ for rect, label, value in rects:
                 ha='center', va='center', fontsize=14, path_effects=[
                     path_effects.withStroke(linewidth=3, foreground='black')])
 
-# Add main themes with increased font size and better positioning
+# Add Ana Temas with increased font size and better positioning
 for y, h, label, color in zip(y_positions, heights, labels, colors):
     ax.annotate(f"{label}", (1.2, y), color=color, fontweight='bold', fontsize=18,
                 ha='left', va='center')
@@ -243,40 +243,40 @@ ax.spines['left'].set_visible(False)
 plt.tight_layout()
 plt.savefig('subtheme_distribution.png', dpi=300, bbox_inches='tight')
 
-# 4. Theme Development Throughout the Film (Heat Map)
+# 4. Temaların Film Boyunca Gelişimi (Isı Haritası)
 plt.figure(figsize=(14, 8))
 
-# Prepare data for heat map
-heatmap_data = progression_df[['Power_Value', 'Journey_Value', 'Friendship_Value', 'Evil_Value', 'Hope_Value']]
-heatmap_data.columns = ['Power', 'Journey', 'Friendship', 'Evil', 'Hope']
+# Isı haritası için veri hazırlığı
+heatmap_data = progression_df[['Güç_Değer', 'Yolculuk_Değer', 'Dostluk_Değer', 'Kötülük_Değer', 'Umut_Değer']]
+heatmap_data.columns = ['Güç', 'Yolculuk', 'Dostluk', 'Kötülük', 'Umut']
 
-# Custom color map
+# Özel renk haritası
 colors = ["#f7fbff", "#6baed6", "#2171b5"]
 cmap = LinearSegmentedColormap.from_list("custom_cmap", colors)
 
-# Heat map
+# Isı haritası
 ax = sns.heatmap(heatmap_data, annot=False, cmap=cmap, linewidths=0.5, 
-                fmt=".1f", cbar_kws={'label': 'Theme Intensity'})
+                fmt=".1f", cbar_kws={'label': 'Tema Yoğunluğu'})
 
-# Visual settings
-ax.set_title('Theme Development Throughout the Film', fontsize=16)
-ax.set_yticklabels(progression_df['Film Section'])
+# Görsel ayarları
+ax.set_title('Temaların Film Boyunca Gelişimi', fontsize=16)
+ax.set_yticklabels(progression_df['Filmin Bölümü'])
 plt.tight_layout()
-plt.savefig('theme_development_heatmap.png', dpi=300, bbox_inches='tight')
+plt.savefig('tema_gelisimi_heatmap.png', dpi=300, bbox_inches='tight')
 
-# 5. Duration Distribution by Film Section
+# 5. Film Bölümlerine Göre Süre Dağılımı
 plt.figure(figsize=(12, 8))
-bars = plt.barh(section_df['Section'], section_df['Minutes'], color='#3182bd')
+bars = plt.barh(section_df['Bölüm'], section_df['Dakika'], color='#3182bd')
 
-# Add text labels
+# Metin etiketleri ekle
 for i, bar in enumerate(bars):
     plt.text(bar.get_width() + 1, bar.get_y() + bar.get_height()/2, 
-             f"{section_df['Minutes'].iloc[i]} min", 
+             f"{section_df['Dakika'].iloc[i]} dk", 
              va='center', fontsize=10)
 
-plt.xlabel('Duration (Minutes)')
-plt.title('Duration Distribution by Film Section')
+plt.xlabel('Süre (Dakika)')
+plt.title('Film Bölümlerine Göre Süre Dağılımı')
 plt.tight_layout()
-plt.savefig('section_duration_distribution.png', dpi=300, bbox_inches='tight')
+plt.savefig('bolum_sure_dagilimi.png', dpi=300, bbox_inches='tight')
 
-print("Visualizations completed and saved.")
+print("Görselleştirmeler tamamlandı ve kaydedildi.")
