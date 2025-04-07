@@ -3550,6 +3550,22 @@ Read port: 51842
 1744038254930	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.error: ({})
-JavaScript error: https://yokatlas.yok.gov.tr/assets/js/mamut-js.js, line 8: TypeError: $search.autocomplete is not a function
-1744037304584	Marionette	INFO	Stopped listening on port 51284
+JavaScript error: https://yokatlas.yok.gov.tr/assets/js/mamut-js.js, line 8: TypeError: $search.autoco1744039549743	geckodriver	INFO	Listening on 127.0.0.1:51181
+1744039552793	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headles1744039552854	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "51*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1744039558292	Marionette	INFO	Marionette enabled
+1744039559006	Marionette	INFO	Listening on port 53970
+WebDriver BiDi listening on ws://127.0.0.1:51831
+Read port: 53970
+1744039559673	RemoteAgent	WARN	TLS certificate errors A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1744039568387	Marionette	INconsole.error: ({})
+1744039587847	Marionette	INFO	Stopped listening on port 53970
 Dynamically enable window occlusion 1
+console.error: (new Error("Polling for changes failed: .", "resource://services-settings/remote-settings.sys.mjs", 430))
+JavaScript error: resource://gre/modules/UpdateService.sys.mjs, line 5460: 
+1744039588786	addons.xpi	ERROR	System addon update list error [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no]
+console.error: Region.sys.mjs: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", "resource://gre/modules/AsyncShutdown.sys.mjs", 569))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 407))
