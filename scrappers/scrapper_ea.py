@@ -206,4 +206,4 @@ for uni in range(0,len(uni_name)):
                 }
         uni_list = uni_list.append(uni_info, ignore_index=True)
 
-uni_list.to_excel("unis_details_ea.xlsx",index=True,merge_cells=False)
+uni_list.to_excel("data/raw/unis_details_ea.xlsx",index=True,merge_cells=False)
