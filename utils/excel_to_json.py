@@ -38,6 +38,16 @@ def excel_to_hierarchical_json(excel_file, puan_turu, university_details):
         # Excel dosyasını oku
         df = pd.read_excel(excel_file)
         
+        # Sütun isimlerini ve ilk birkaç satırı göster - debug için
+        print(f"Sütun isimleri: {df.columns.tolist()}")
+        if not df.empty:
+            sample_row = df.iloc[0]
+            print(f"İlk satır örneği (bazı alanlar):")
+            print(f"  Yerleşen son kişinin Diploma notu: {sample_row.get('Yerleşen son kişinin Diploma notu', 'YOK')}")
+            print(f"  Ortalama OBP: {sample_row.get('Ortalama OBP', 'YOK')}")
+            print(f"  TYT Temel Matematik: {sample_row.get('TYT Temel Matematik', 'YOK')}")
+            print(f"  TYT Türkçe: {sample_row.get('TYT Türkçe', 'YOK')}")
+        
         # Üniversite, fakülte ve bölüm bazında sıralama için DataFrame'i düzenle
         df = df.sort_values(by=['Üniversite İsmi', 'fakülte', 'bolum'])
         
@@ -50,6 +60,34 @@ def excel_to_hierarchical_json(excel_file, puan_turu, university_details):
                 uni_name = row['Üniversite İsmi']
                 faculty_name = row['fakülte']
                 department_name = row['bolum']
+                
+                # Excel dosyasında sütun adları farklı olabilir - TYT için özel kontroller
+                diploma_notu = row.get('Yerleşen son kişinin Diploma notu', '')
+                ortalama_obp = row.get('Ortalama OBP', '')
+                
+                # TYT verileri için sütun isimleri kontrol et - farklı yazımlar için de dene
+                tyt_mat = row.get('TYT Temel Matematik', None)
+                if tyt_mat is None or pd.isna(tyt_mat):
+                    tyt_mat = row.get('TYT Matematik', '')
+                
+                tyt_fen = row.get('TYT Fen Bilimleri', None)
+                if tyt_fen is None or pd.isna(tyt_fen):
+                    tyt_fen = row.get('TYT Fen', '')
+                
+                tyt_turkce = row.get('TYT Türkçe', '')
+                tyt_sosyal = row.get('TYT Sosyal Bilimler', None)
+                if tyt_sosyal is None or pd.isna(tyt_sosyal):
+                    tyt_sosyal = row.get('TYT Sosyal', '')
+                
+                # İlk 5 satır için debug bilgisi yazdır
+                if index < 5 and puan_turu.upper() == 'TYT':
+                    print(f"\nTYT Satır {index} - Alanlar:")
+                    print(f"  Diploma notu: {diploma_notu}")
+                    print(f"  OBP: {ortalama_obp}")
+                    print(f"  TYT Mat: {tyt_mat}")
+                    print(f"  TYT Fen: {tyt_fen}")
+                    print(f"  TYT Türkçe: {tyt_turkce}")
+                    print(f"  TYT Sosyal: {tyt_sosyal}")
                 
                 # Dizileri doğru şekilde ayrıştır
                 try:
@@ -156,18 +194,19 @@ def excel_to_hierarchical_json(excel_file, puan_turu, university_details):
                 
                 # Puan türüne göre TYT ve AYT alanlarını ekle
                 yerlesenlerin_yks_net_ortalamalari = {}
-                puan_turu_value = row.get('puan', '').upper() if row.get('puan') else puan_turu.upper()
                 
-                # TYT alanları ekle (sadece TYT veya TYT+AYT için)
+                # TYT alanları ekle - yukarıda kontrol edilen değerleri kullan
                 tyt_fields = {
-                    "TYT_Temel_Matematik": row.get('TYT Temel Matematik', ''),
-                    "TYT_Fen_Bilimleri": row.get('TYT Fen Bilimleri', ''),
-                    "TYT_Turkce": row.get('TYT Türkçe', ''),
-                    "TYT_Sosyal_Bilimler": row.get('TYT Sosyal Bilimler', '')
+                    "TYT_Temel_Matematik": str(tyt_mat) if not pd.isna(tyt_mat) else '',
+                    "TYT_Fen_Bilimleri": str(tyt_fen) if not pd.isna(tyt_fen) else '',
+                    "TYT_Turkce": str(tyt_turkce) if not pd.isna(tyt_turkce) else '',
+                    "TYT_Sosyal_Bilimler": str(tyt_sosyal) if not pd.isna(tyt_sosyal) else ''
                 }
                 yerlesenlerin_yks_net_ortalamalari.update(tyt_fields)
                 
                 # TYT haricindeki puan türleri için AYT alanlarını ekle
+                puan_turu_value = row.get('puan', '').upper() if row.get('puan') else puan_turu.upper()
+                
                 if puan_turu_value == 'SAY':
                     yerlesenlerin_yks_net_ortalamalari.update({
                         "AYT_Sayisal": {
@@ -216,7 +255,8 @@ def excel_to_hierarchical_json(excel_file, puan_turu, university_details):
                     "son4_siralama": son4_siralama,
                     "son4_puan": son4_puan,
                     "YOP_Kodu": row.get('yop', ''),
-                    "Yerlesen_son_kisinin_Diploma_notu": row.get('Yerleşen son kişinin Diploma notu', ''),
+                    "Yerlesen_son_kisinin_Diploma_notu": str(diploma_notu) if not pd.isna(diploma_notu) else '',
+                    "Ortalama_OBP": str(ortalama_obp) if not pd.isna(ortalama_obp) else '',
                     "Yerlesenlerin_YKS_Net_Ortalamalari": yerlesenlerin_yks_net_ortalamalari,
                     "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                         "Profesor": profesor,
@@ -274,7 +314,7 @@ def excel_to_hierarchical_json(excel_file, puan_turu, university_details):
                 universities[uni_name]["fakulteler"][faculty_name]["bolumler"][department_name] = bolum_bilgileri
                 
             except Exception as e:
-                # Satırı işlerken hata oluştuğunda devam et
+                print(f"Satır işlenirken hata oluştu (satır {index}): {e}")
                 continue
         
         # Sözlük yapısını sıralı listeye dönüştür
@@ -337,19 +377,26 @@ def create_json_files():
     print("JSON dosyaları sıfırdan oluşturuluyor...")
     
     # Üniversite detaylarını yükle
-    university_details = get_university_details("unis_start.xlsx")
+    university_details = get_university_details("data/unis_details_with_banners.xlsx")
     
     # Excel dosya yolları ve puan türleri
     excel_files = {
-        "say": "data/finished/unis_details_say_rj.xlsx",
-        "ea": "data/finished/unis_details_ea_rj.xlsx",
-        "soz": "data/finished/unis_details_söz_rj.xlsx",
-        "dil": "data/finished/unis_details_dil_rj.xlsx",
-        "tyt": "data/finished/unis_details_tyt_rj.xlsx"
+        "say": "unis_details_say_deneme.xlsx",
+        "ea": "unis_details_ea_deneme.xlsx",
+        "söz": "unis_details_söz_deneme.xlsx",
+        "dil": "unis_details_dil_deneme.xlsx",
+        "tyt": "unis_details_tyt_deneme.xlsx"
     }
     
+    # Eğer dosyalar data/finished klasöründe ise alternatif yolları kontrol et
+    for puan_turu, file_path in list(excel_files.items()):
+        alt_path = f"data/finished/unis_details_{puan_turu}_rj.xlsx"
+        if not os.path.exists(file_path) and os.path.exists(alt_path):
+            excel_files[puan_turu] = alt_path
+            print(f"Alternatif yol kullanılıyor: {alt_path}")
+    
     # final klasörünü temizle veya oluştur
-    final_dir = "final"
+    final_dir = "json"
     if os.path.exists(final_dir):
         # İsteğe bağlı: Mevcut dosyaları sil
         for file in os.listdir(final_dir):
