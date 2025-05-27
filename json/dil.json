@@ -242,8 +242,8 @@
                                     "291,42030"
                                 ],
                                 "YOP_Kodu": "100210283",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "301,90464",
+                                "Ortalama_OBP": "392,206",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "2.00",
                                     "TYT Fen Bilimleri": "---",
@@ -252,21 +252,21 @@
                                     "AYT Yabancı Dil 1": "27.75"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "1,8",
+                                    "TYT_Fen_Bilimleri": "0,5",
+                                    "TYT_Turkce": "20,0",
+                                    "TYT_Sosyal_Bilimler": "8,7",
+                                    "AYT_Yabanci_Dil_1": "31,5",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "51,8",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                                     "Profesor": 0,
-                                    "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Docent": 2,
+                                    "Doktora": 3,
+                                    "Toplam_Ogretim_Gorevlisi": 5
                                 }
                             }
                         }
@@ -1315,8 +1315,8 @@
                                     "235,60145"
                                 ],
                                 "YOP_Kodu": "100890060",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "297,43494",
+                                "Ortalama_OBP": "385,487",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "-0.75",
                                     "TYT Fen Bilimleri": "2.00",
@@ -1325,21 +1325,21 @@
                                     "AYT Yabancı Dil 1": "34.25"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "3,3",
+                                    "TYT_Fen_Bilimleri": "0,6",
+                                    "TYT_Turkce": "22,6",
+                                    "TYT_Sosyal_Bilimler": "9,2",
+                                    "AYT_Yabanci_Dil_1": "36,3",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "67,5",
+                                    "AYT_Yabanci_Dil_4": "63,2",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
-                                    "Profesor": 0,
-                                    "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Profesor": 2,
+                                    "Docent": 2,
+                                    "Doktora": 1,
+                                    "Toplam_Ogretim_Gorevlisi": 5
                                 }
                             }
                         }
@@ -3863,8 +3863,8 @@
                                     "Dolmadı"
                                 ],
                                 "YOP_Kodu": "101110121",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "297,56099",
+                                "Ortalama_OBP": "386,331",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "1.75",
                                     "TYT Fen Bilimleri": "---",
@@ -3873,21 +3873,21 @@
                                     "AYT Yabancı Dil 1": "37.50"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "4,6",
+                                    "TYT_Fen_Bilimleri": "1,1",
+                                    "TYT_Turkce": "24,6",
+                                    "TYT_Sosyal_Bilimler": "11,0",
+                                    "AYT_Yabanci_Dil_1": "43,6",
+                                    "AYT_Yabanci_Dil_2": "73,8",
+                                    "AYT_Yabanci_Dil_3": "63,6",
+                                    "AYT_Yabanci_Dil_4": "47,9",
+                                    "AYT_Yabanci_Dil_5": "38,8"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                                     "Profesor": 0,
                                     "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Doktora": 1,
+                                    "Toplam_Ogretim_Gorevlisi": 1
                                 }
                             }
                         },
@@ -4619,7 +4619,13 @@
                                 "YOP_Kodu": "101110351",
                                 "Yerlesen_son_kisinin_Diploma_notu": "362,82811",
                                 "Ortalama_OBP": "406,437",
-                                "Yerlesen_son_kisinin_netleri": {},
+                                "Yerlesen_son_kisinin_netleri": {
+                                    "TYT Temel Matematik": "15.00",
+                                    "TYT Fen Bilimleri": "5.25",
+                                    "TYT Türkçe": "27.75",
+                                    "TYT Sosyal Bilimler": "14.00",
+                                    "AYT Yabancı Dil 1": "39.00"
+                                },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
                                     "TYT_Temel_Matematik": "5,2",
                                     "TYT_Fen_Bilimleri": "1,5",
@@ -4671,7 +4677,13 @@
                                 "YOP_Kodu": "101190619",
                                 "Yerlesen_son_kisinin_Diploma_notu": "330,13079",
                                 "Ortalama_OBP": "421,000",
-                                "Yerlesen_son_kisinin_netleri": {},
+                                "Yerlesen_son_kisinin_netleri": {
+                                    "TYT Temel Matematik": "0.75",
+                                    "TYT Fen Bilimleri": "1.00",
+                                    "TYT Türkçe": "22.00",
+                                    "TYT Sosyal Bilimler": "6.25",
+                                    "AYT Yabancı Dil 1": "47.50"
+                                },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
                                     "TYT_Temel_Matematik": "0,8",
                                     "TYT_Fen_Bilimleri": "1,0",
@@ -5273,8 +5285,8 @@
                                     "234,98657"
                                 ],
                                 "YOP_Kodu": "101410039",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "297,35985",
+                                "Ortalama_OBP": "398,290",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "2.25",
                                     "TYT Fen Bilimleri": "2.00",
@@ -5283,21 +5295,21 @@
                                     "AYT Yabancı Dil 1": "28.00"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "5,0",
+                                    "TYT_Fen_Bilimleri": "0,7",
+                                    "TYT_Turkce": "24,9",
+                                    "TYT_Sosyal_Bilimler": "9,4",
+                                    "AYT_Yabanci_Dil_1": "35,1",
+                                    "AYT_Yabanci_Dil_2": "49,8",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
-                                    "Profesor": 0,
-                                    "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Profesor": 6,
+                                    "Docent": 2,
+                                    "Doktora": 1,
+                                    "Toplam_Ogretim_Gorevlisi": 9
                                 }
                             }
                         },
@@ -15969,8 +15981,8 @@
                                     "223,25050"
                                 ],
                                 "YOP_Kodu": "104810202",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "296,05346",
+                                "Ortalama_OBP": "394,703",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "---",
                                     "TYT Fen Bilimleri": "0.25",
@@ -15979,21 +15991,21 @@
                                     "AYT Yabancı Dil 1": "36.25"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "4,1",
+                                    "TYT_Fen_Bilimleri": "0,7",
+                                    "TYT_Turkce": "19,7",
+                                    "TYT_Sosyal_Bilimler": "7,1",
+                                    "AYT_Yabanci_Dil_1": "---",
+                                    "AYT_Yabanci_Dil_2": "55,2",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
-                                    "Profesor": 0,
+                                    "Profesor": 1,
                                     "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Doktora": 2,
+                                    "Toplam_Ogretim_Gorevlisi": 3
                                 }
                             }
                         },
@@ -16957,8 +16969,8 @@
                                     "314,07917"
                                 ],
                                 "YOP_Kodu": "201650171",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "297,22507",
+                                "Ortalama_OBP": "417,558",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "0.50",
                                     "TYT Fen Bilimleri": "0.50",
@@ -16967,15 +16979,15 @@
                                     "AYT Yabancı Dil 1": "36.25"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "5,3",
+                                    "TYT_Fen_Bilimleri": "1,7",
+                                    "TYT_Turkce": "26,4",
+                                    "TYT_Sosyal_Bilimler": "11,4",
+                                    "AYT_Yabanci_Dil_1": "35,2",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                                     "Profesor": 0,
@@ -17617,8 +17629,8 @@
                                     "239,42591"
                                 ],
                                 "YOP_Kodu": "105990135",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "300,18889",
+                                "Ortalama_OBP": "397,918",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "---",
                                     "TYT Fen Bilimleri": "---",
@@ -17627,21 +17639,21 @@
                                     "AYT Yabancı Dil 1": "46.75"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "4,1",
+                                    "TYT_Fen_Bilimleri": "1,1",
+                                    "TYT_Turkce": "24,3",
+                                    "TYT_Sosyal_Bilimler": "10,9",
+                                    "AYT_Yabanci_Dil_1": "34,8",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "46,8",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                                     "Profesor": 0,
                                     "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Doktora": 5,
+                                    "Toplam_Ogretim_Gorevlisi": 5
                                 }
                             }
                         },
@@ -18378,8 +18390,8 @@
                                     "241,04423"
                                 ],
                                 "YOP_Kodu": "106190085",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "298,50231",
+                                "Ortalama_OBP": "384,900",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "2.00",
                                     "TYT Fen Bilimleri": "-1.25",
@@ -18388,21 +18400,21 @@
                                     "AYT Yabancı Dil 1": "48.00"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "3,4",
+                                    "TYT_Fen_Bilimleri": "0,4",
+                                    "TYT_Turkce": "22,4",
+                                    "TYT_Sosyal_Bilimler": "9,3",
+                                    "AYT_Yabanci_Dil_1": "39,3",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "65,0",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
-                                    "Profesor": 0,
-                                    "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Profesor": 1,
+                                    "Docent": 3,
+                                    "Doktora": 2,
+                                    "Toplam_Ogretim_Gorevlisi": 6
                                 }
                             }
                         }
@@ -21607,8 +21619,8 @@
                                     "---"
                                 ],
                                 "YOP_Kodu": "107290450",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "297,79929",
+                                "Ortalama_OBP": "463,000",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "3.00",
                                     "TYT Fen Bilimleri": "---",
@@ -21617,21 +21629,21 @@
                                     "AYT Yabancı Dil 1": "27.75"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "3,0",
+                                    "TYT_Fen_Bilimleri": "---",
+                                    "TYT_Turkce": "26,0",
+                                    "TYT_Sosyal_Bilimler": "10,5",
+                                    "AYT_Yabanci_Dil_1": "27,8",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
-                                    "Profesor": 0,
-                                    "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Profesor": 3,
+                                    "Docent": 2,
+                                    "Doktora": 1,
+                                    "Toplam_Ogretim_Gorevlisi": 6
                                 }
                             }
                         },
@@ -27012,8 +27024,8 @@
                                     "---"
                                 ],
                                 "YOP_Kodu": "206710521",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "296,45475",
+                                "Ortalama_OBP": "416,382",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "4.00",
                                     "TYT Fen Bilimleri": "6.75",
@@ -27022,15 +27034,15 @@
                                     "AYT Yabancı Dil 1": "28.00"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "7,8",
+                                    "TYT_Fen_Bilimleri": "2,8",
+                                    "TYT_Turkce": "18,4",
+                                    "TYT_Sosyal_Bilimler": "7,7",
+                                    "AYT_Yabanci_Dil_1": "36,2",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                                     "Profesor": 0,
@@ -33064,8 +33076,8 @@
                                     "246,87722"
                                 ],
                                 "YOP_Kodu": "110790032",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "294,73428",
+                                "Ortalama_OBP": "388,885",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "---",
                                     "TYT Fen Bilimleri": "0.50",
@@ -33074,21 +33086,21 @@
                                     "AYT Yabancı Dil 1": "34.75"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "2,4",
+                                    "TYT_Fen_Bilimleri": "0,7",
+                                    "TYT_Turkce": "23,6",
+                                    "TYT_Sosyal_Bilimler": "9,8",
+                                    "AYT_Yabanci_Dil_1": "37,1",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                                     "Profesor": 0,
-                                    "Docent": 0,
-                                    "Doktora": 0,
-                                    "Toplam_Ogretim_Gorevlisi": 0
+                                    "Docent": 1,
+                                    "Doktora": 4,
+                                    "Toplam_Ogretim_Gorevlisi": 5
                                 }
                             }
                         }
@@ -34271,8 +34283,8 @@
                                     "Dolmadı"
                                 ],
                                 "YOP_Kodu": "209310011",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "297,22248",
+                                "Ortalama_OBP": "402,958",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "1.00",
                                     "TYT Fen Bilimleri": "0.25",
@@ -34281,15 +34293,15 @@
                                     "AYT Yabancı Dil 1": "39.00"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "3,8",
+                                    "TYT_Fen_Bilimleri": "0,6",
+                                    "TYT_Turkce": "25,4",
+                                    "TYT_Sosyal_Bilimler": "10,0",
+                                    "AYT_Yabanci_Dil_1": "41,5",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                                     "Profesor": 0,
@@ -37344,8 +37356,8 @@
                                     "287,88511"
                                 ],
                                 "YOP_Kodu": "204712216",
-                                "Yerlesen_son_kisinin_Diploma_notu": "",
-                                "Ortalama_OBP": "",
+                                "Yerlesen_son_kisinin_Diploma_notu": "300,25740",
+                                "Ortalama_OBP": "410,855",
                                 "Yerlesen_son_kisinin_netleri": {
                                     "TYT Temel Matematik": "13.00",
                                     "TYT Fen Bilimleri": "-0.25",
@@ -37354,15 +37366,15 @@
                                     "AYT Yabancı Dil 1": "25.25"
                                 },
                                 "Yerlesenlerin_YKS_Net_Ortalamalari": {
-                                    "TYT_Temel_Matematik": "",
-                                    "TYT_Fen_Bilimleri": "",
-                                    "TYT_Turkce": "",
-                                    "TYT_Sosyal_Bilimler": "",
-                                    "AYT_Yabanci_Dil_1": NaN,
-                                    "AYT_Yabanci_Dil_2": NaN,
-                                    "AYT_Yabanci_Dil_3": NaN,
-                                    "AYT_Yabanci_Dil_4": NaN,
-                                    "AYT_Yabanci_Dil_5": NaN
+                                    "TYT_Temel_Matematik": "3,7",
+                                    "TYT_Fen_Bilimleri": "0,6",
+                                    "TYT_Turkce": "23,0",
+                                    "TYT_Sosyal_Bilimler": "9,6",
+                                    "AYT_Yabanci_Dil_1": "41,8",
+                                    "AYT_Yabanci_Dil_2": "---",
+                                    "AYT_Yabanci_Dil_3": "---",
+                                    "AYT_Yabanci_Dil_4": "---",
+                                    "AYT_Yabanci_Dil_5": "---"
                                 },
                                 "Ogretim_Uyesi_Sayisi_ve_Unvan_Dagilimi": {
                                     "Profesor": 0,
